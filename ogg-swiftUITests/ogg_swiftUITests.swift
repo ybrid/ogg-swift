@@ -1,6 +1,6 @@
 //
-// ogg_swiftTests.swift
-// ogg-swiftTests
+// ogg_swiftUITests.swift
+// ogg-swiftUITests
 //
 // Copyright (c) 2021 nacamar GmbH - Ybrid®, a Hybrid Dynamic Live Audio Technology
 //
@@ -24,28 +24,30 @@
 //
 
 import XCTest
-@testable import ogg_swift
+import YbridOgg
 
-class ogg_swiftTests: XCTestCase {
+class ogg_swiftUITests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testBundleInfo() throws {
+        let oggBundleIdentifier = "io.ybrid.ogg-swift"
+        
+        guard let bundle = Bundle(identifier: oggBundleIdentifier) else {
+            XCTFail("no bundle identifier '\(oggBundleIdentifier)' found")
+            return
         }
+        guard let info = bundle.infoDictionary else {
+            XCTFail("no infoDictionary on bundle '\(oggBundleIdentifier)' found")
+            return
+        }
+        print("-- infoDictionary is '\(info)'")
+        
+        let version = info["CFBundleShortVersionString"] as! String
+        XCTAssertNotNil(version)
+        let name = info["CFBundleName"] as! String
+        XCTAssertEqual("YbridOgg", name)
+        let copyright = info["NSHumanReadableCopyright"] as! String
+        XCTAssertTrue(copyright.contains("nacamar"))
+        
+        print("-- version of \(name) is \(version)")
     }
-
 }

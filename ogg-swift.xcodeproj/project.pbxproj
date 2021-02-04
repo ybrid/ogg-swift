@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17E5BB7425C817C20061F232 /* YbridOgg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E5BB6A25C817C20061F232 /* YbridOgg.framework */; };
-		17E5BB7925C817C20061F232 /* ogg_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E5BB7825C817C20061F232 /* ogg_swiftTests.swift */; };
 		17E5BB9825C819000061F232 /* ogg.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E5BB9225C819000061F232 /* ogg.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17E5BB9925C819000061F232 /* config_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E5BB9325C819000061F232 /* config_types.h */; };
 		17E5BB9A25C819000061F232 /* os_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E5BB9425C819000061F232 /* os_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,23 +14,12 @@
 		17E5BB9C25C819000061F232 /* bitwise.c in Sources */ = {isa = PBXBuildFile; fileRef = 17E5BB9725C819000061F232 /* bitwise.c */; };
 		17E5BBAE25C819910061F232 /* ogg_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E5BBAC25C819910061F232 /* ogg_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17E5BC7425C84AA40061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BC7325C84AA40061F232 /* Config.xcconfig */; };
+		17EE842A25CC493A002F15B3 /* ogg_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE842925CC493A002F15B3 /* ogg_swiftUITests.swift */; };
+		17EE843425CC4A63002F15B3 /* YbridOgg.framework in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BB6A25C817C20061F232 /* YbridOgg.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		17E5BB7525C817C20061F232 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 17E5BB6125C817C20061F232 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 17E5BB6925C817C20061F232;
-			remoteInfo = "ogg-swift";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		17E5BB6A25C817C20061F232 /* YbridOgg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YbridOgg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		17E5BB7325C817C20061F232 /* ogg-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ogg-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		17E5BB7825C817C20061F232 /* ogg_swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ogg_swiftTests.swift; sourceTree = "<group>"; };
-		17E5BB7A25C817C20061F232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17E5BB9225C819000061F232 /* ogg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ogg.h; sourceTree = "<group>"; };
 		17E5BB9325C819000061F232 /* config_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_types.h; sourceTree = "<group>"; };
 		17E5BB9425C819000061F232 /* os_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = os_types.h; sourceTree = "<group>"; };
@@ -42,6 +29,9 @@
 		17E5BBAC25C819910061F232 /* ogg_swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ogg_swift.h; sourceTree = "<group>"; };
 		17E5BBCD25C821EA0061F232 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		17E5BC7325C84AA40061F232 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		17EE842725CC493A002F15B3 /* ogg-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ogg-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17EE842925CC493A002F15B3 /* ogg_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ogg_swiftUITests.swift; sourceTree = "<group>"; };
+		17EE842B25CC493A002F15B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +42,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17E5BB7025C817C20061F232 /* Frameworks */ = {
+		17EE842425CC493A002F15B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E5BB7425C817C20061F232 /* YbridOgg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,8 +58,9 @@
 				17E5BC7325C84AA40061F232 /* Config.xcconfig */,
 				17E5BB9025C819000061F232 /* Xiph.org */,
 				17E5BB6C25C817C20061F232 /* ogg-swift */,
-				17E5BB7725C817C20061F232 /* ogg-swiftTests */,
+				17EE842825CC493A002F15B3 /* ogg-swiftUITests */,
 				17E5BB6B25C817C20061F232 /* Products */,
+				17EE843325CC4A63002F15B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				17E5BB6A25C817C20061F232 /* YbridOgg.framework */,
-				17E5BB7325C817C20061F232 /* ogg-swiftTests.xctest */,
+				17EE842725CC493A002F15B3 /* ogg-swiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,15 +81,6 @@
 				17E5BBAC25C819910061F232 /* ogg_swift.h */,
 			);
 			path = "ogg-swift";
-			sourceTree = "<group>";
-		};
-		17E5BB7725C817C20061F232 /* ogg-swiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				17E5BB7825C817C20061F232 /* ogg_swiftTests.swift */,
-				17E5BB7A25C817C20061F232 /* Info.plist */,
-			);
-			path = "ogg-swiftTests";
 			sourceTree = "<group>";
 		};
 		17E5BB9025C819000061F232 /* Xiph.org */ = {
@@ -128,6 +109,22 @@
 				17E5BB9725C819000061F232 /* bitwise.c */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		17EE842825CC493A002F15B3 /* ogg-swiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17EE842925CC493A002F15B3 /* ogg_swiftUITests.swift */,
+				17EE842B25CC493A002F15B3 /* Info.plist */,
+			);
+			path = "ogg-swiftUITests";
+			sourceTree = "<group>";
+		};
+		17EE843325CC4A63002F15B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,23 +162,22 @@
 			productReference = 17E5BB6A25C817C20061F232 /* YbridOgg.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		17E5BB7225C817C20061F232 /* ogg-swiftTests */ = {
+		17EE842625CC493A002F15B3 /* ogg-swiftUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17E5BB8125C817C20061F232 /* Build configuration list for PBXNativeTarget "ogg-swiftTests" */;
+			buildConfigurationList = 17EE842E25CC493A002F15B3 /* Build configuration list for PBXNativeTarget "ogg-swiftUITests" */;
 			buildPhases = (
-				17E5BB6F25C817C20061F232 /* Sources */,
-				17E5BB7025C817C20061F232 /* Frameworks */,
-				17E5BB7125C817C20061F232 /* Resources */,
+				17EE842325CC493A002F15B3 /* Sources */,
+				17EE842425CC493A002F15B3 /* Frameworks */,
+				17EE842525CC493A002F15B3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				17E5BB7625C817C20061F232 /* PBXTargetDependency */,
 			);
-			name = "ogg-swiftTests";
-			productName = "ogg-swiftTests";
-			productReference = 17E5BB7325C817C20061F232 /* ogg-swiftTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "ogg-swiftUITests";
+			productName = "ogg-swiftUITests";
+			productReference = 17EE842725CC493A002F15B3 /* ogg-swiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -195,7 +191,7 @@
 					17E5BB6925C817C20061F232 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					17E5BB7225C817C20061F232 = {
+					17EE842625CC493A002F15B3 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -214,7 +210,7 @@
 			projectRoot = "";
 			targets = (
 				17E5BB6925C817C20061F232 /* ogg-swift */,
-				17E5BB7225C817C20061F232 /* ogg-swiftTests */,
+				17EE842625CC493A002F15B3 /* ogg-swiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,10 +224,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17E5BB7125C817C20061F232 /* Resources */ = {
+		17EE842525CC493A002F15B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EE843425CC4A63002F15B3 /* YbridOgg.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,23 +244,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		17E5BB6F25C817C20061F232 /* Sources */ = {
+		17EE842325CC493A002F15B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E5BB7925C817C20061F232 /* ogg_swiftTests.swift in Sources */,
+				17EE842A25CC493A002F15B3 /* ogg_swiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		17E5BB7625C817C20061F232 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 17E5BB6925C817C20061F232 /* ogg-swift */;
-			targetProxy = 17E5BB7525C817C20061F232 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		17E5BB7C25C817C20061F232 /* Debug */ = {
@@ -303,10 +292,8 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -328,11 +315,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = YbridOgg;
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -373,10 +358,8 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -391,12 +374,10 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = YbridOgg;
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -416,12 +397,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.6.4;
+				MARKETING_VERSION = 0.7.0;
 				MODULEMAP_FILE = "ogg-swift/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.ogg-swift";
 				PRODUCT_NAME = "$(inherited)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
@@ -442,48 +422,57 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.6.4;
+				MARKETING_VERSION = 0.7.0;
 				MODULEMAP_FILE = "ogg-swift/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.ogg-swift";
 				PRODUCT_NAME = "$(inherited)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
-		17E5BB8225C817C20061F232 /* Debug */ = {
+		17EE842C25CC493A002F15B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PF7PNM95XY;
-				INFOPLIST_FILE = "ogg-swiftTests/Info.plist";
+				INFOPLIST_FILE = "ogg-swiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"@loader_path",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.ogg-swiftTests";
+				OTHER_LDFLAGS = (
+					"-framework",
+					YbridOgg,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.ogg-swiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		17E5BB8325C817C20061F232 /* Release */ = {
+		17EE842D25CC493A002F15B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PF7PNM95XY;
-				INFOPLIST_FILE = "ogg-swiftTests/Info.plist";
+				INFOPLIST_FILE = "ogg-swiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+					"@loader_path",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.ogg-swiftTests";
+				OTHER_LDFLAGS = (
+					"-framework",
+					YbridOgg,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.ogg-swiftUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -509,11 +498,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17E5BB8125C817C20061F232 /* Build configuration list for PBXNativeTarget "ogg-swiftTests" */ = {
+		17EE842E25CC493A002F15B3 /* Build configuration list for PBXNativeTarget "ogg-swiftUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17E5BB8225C817C20061F232 /* Debug */,
-				17E5BB8325C817C20061F232 /* Release */,
+				17EE842C25CC493A002F15B3 /* Debug */,
+				17EE842D25CC493A002F15B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

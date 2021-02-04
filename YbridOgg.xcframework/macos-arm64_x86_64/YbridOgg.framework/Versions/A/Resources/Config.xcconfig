@@ -29,7 +29,10 @@
 ARCHS = arm64 armv7 x86_64 x86_64h i386
 EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
 EXCLUDED_ARCHS[sdk=macosx*] = i386
+
 SUPPORTED_PLATFORMS = iphoneos iphonesimulator macosx
 
 IPHONEOS_DEPLOYMENT_TARGET = 9.0
 MACOSX_DEPLOYMENT_TARGET = 10.10
+
+SWIFT_VERSION = 4.0
