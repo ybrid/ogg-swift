@@ -81,6 +81,6 @@ cmd="$cmd -output $xcFramework"
 #echo $cmd
 $cmd
 
-echo "generate $xcFramework.zip ..."
+echo "generate $xcFramework.zip..."
 zip -q -r $xcFramework.zip $xcFramework
 echo "done."
