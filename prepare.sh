@@ -29,7 +29,6 @@
 # - XCode installed
 
 
-
 liboggDownload="https://downloads.xiph.org/releases/ogg/libogg-1.3.4.zip"
 here=$(pwd)
 
@@ -57,4 +56,4 @@ for f in $liboggDir/src/*.{h,c}; do
     echo "copying $file with flattened ogg includes"
     sed -r $pattern $f > src/$file 
 done
-echo "ogg-swift.xcodeproj is prepared, check $logfile"
+echo "ogg-swift.xcodeproj is ready, check $logfile"

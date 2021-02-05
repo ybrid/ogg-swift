@@ -24,5 +24,8 @@ Pods
 **/build-*.log
 *.log
 libogg-*/
+include/*.h
+src/*.h 
+src/*.c
 *.xcframework
 *.zip
