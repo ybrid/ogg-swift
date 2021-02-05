@@ -1,6 +1,6 @@
 #
 # Run `pod_check.sh` to ensure this is a valid spec before submitting.
-# Ensure that YbridOgg.xcframework.zip and LICENSE are available on origin.
+# YbridOgg.xcframework.zip and LICENSE are available on corresponding release on github.
 # Submit this version to Cocoapod with 'pod_push.sh'.
 #
 Pod::Spec.new do |s|
