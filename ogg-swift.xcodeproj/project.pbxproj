@@ -7,23 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17E5BB9B25C819000061F232 /* framing.c in Sources */ = {isa = PBXBuildFile; fileRef = 17E5BB9625C819000061F232 /* framing.c */; };
-		17E5BB9C25C819000061F232 /* bitwise.c in Sources */ = {isa = PBXBuildFile; fileRef = 17E5BB9725C819000061F232 /* bitwise.c */; };
 		17E5BBAE25C819910061F232 /* ogg_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E5BBAC25C819910061F232 /* ogg_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17E5BC7425C84AA40061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BC7325C84AA40061F232 /* Config.xcconfig */; };
 		17EE842A25CC493A002F15B3 /* ogg_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE842925CC493A002F15B3 /* ogg_swiftUITests.swift */; };
 		17EE843425CC4A63002F15B3 /* YbridOgg.framework in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BB6A25C817C20061F232 /* YbridOgg.framework */; };
-		17EE845F25CC5F09002F15B3 /* crctable.h in Headers */ = {isa = PBXBuildFile; fileRef = 17EE845E25CC5F09002F15B3 /* crctable.h */; };
-		17EE84B425CC66A8002F15B3 /* ogg in Resources */ = {isa = PBXBuildFile; fileRef = 17EE84B325CC66A8002F15B3 /* ogg */; };
-		17EE84DC25CC68FF002F15B3 /* ogg.h in Headers */ = {isa = PBXBuildFile; fileRef = 17EE84D925CC68FF002F15B3 /* ogg.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17EE84DD25CC68FF002F15B3 /* config_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 17EE84DA25CC68FF002F15B3 /* config_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17EE84DE25CC68FF002F15B3 /* os_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 17EE84DB25CC68FF002F15B3 /* os_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17EE867725CD990C002F15B3 /* ogg.h in Headers */ = {isa = PBXBuildFile; fileRef = 17EE867525CD990C002F15B3 /* ogg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17EE867825CD990C002F15B3 /* os_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 17EE867625CD990C002F15B3 /* os_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17EE867F25CD9915002F15B3 /* framing.c in Sources */ = {isa = PBXBuildFile; fileRef = 17EE867C25CD9915002F15B3 /* framing.c */; };
+		17EE868025CD9915002F15B3 /* crctable.h in Headers */ = {isa = PBXBuildFile; fileRef = 17EE867D25CD9915002F15B3 /* crctable.h */; };
+		17EE868125CD9915002F15B3 /* bitwise.c in Sources */ = {isa = PBXBuildFile; fileRef = 17EE867E25CD9915002F15B3 /* bitwise.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17E5BB6A25C817C20061F232 /* YbridOgg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YbridOgg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		17E5BB9625C819000061F232 /* framing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = framing.c; sourceTree = "<group>"; };
-		17E5BB9725C819000061F232 /* bitwise.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitwise.c; sourceTree = "<group>"; };
 		17E5BBAB25C819910061F232 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17E5BBAC25C819910061F232 /* ogg_swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ogg_swift.h; sourceTree = "<group>"; };
 		17E5BBCD25C821EA0061F232 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
@@ -31,11 +27,11 @@
 		17EE842725CC493A002F15B3 /* ogg-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ogg-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		17EE842925CC493A002F15B3 /* ogg_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ogg_swiftUITests.swift; sourceTree = "<group>"; };
 		17EE842B25CC493A002F15B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17EE845E25CC5F09002F15B3 /* crctable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crctable.h; sourceTree = "<group>"; };
-		17EE84B325CC66A8002F15B3 /* ogg */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ogg; sourceTree = "<group>"; };
-		17EE84D925CC68FF002F15B3 /* ogg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ogg.h; path = ogg/ogg.h; sourceTree = "<group>"; };
-		17EE84DA25CC68FF002F15B3 /* config_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config_types.h; path = ogg/config_types.h; sourceTree = "<group>"; };
-		17EE84DB25CC68FF002F15B3 /* os_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = os_types.h; path = ogg/os_types.h; sourceTree = "<group>"; };
+		17EE867525CD990C002F15B3 /* ogg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ogg.h; sourceTree = "<group>"; };
+		17EE867625CD990C002F15B3 /* os_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = os_types.h; sourceTree = "<group>"; };
+		17EE867C25CD9915002F15B3 /* framing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = framing.c; sourceTree = "<group>"; };
+		17EE867D25CD9915002F15B3 /* crctable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crctable.h; sourceTree = "<group>"; };
+		17EE867E25CD9915002F15B3 /* bitwise.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bitwise.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				17E5BC7325C84AA40061F232 /* Config.xcconfig */,
-				17E5BB9025C819000061F232 /* Xiph.org */,
+				17EE867B25CD9915002F15B3 /* src */,
+				17EE867425CD990C002F15B3 /* include */,
 				17E5BB6C25C817C20061F232 /* ogg-swift */,
 				17EE842825CC493A002F15B3 /* ogg-swiftUITests */,
 				17E5BB6B25C817C20061F232 /* Products */,
@@ -87,25 +84,6 @@
 			path = "ogg-swift";
 			sourceTree = "<group>";
 		};
-		17E5BB9025C819000061F232 /* Xiph.org */ = {
-			isa = PBXGroup;
-			children = (
-				17EE848325CC6478002F15B3 /* include */,
-				17E5BB9525C819000061F232 /* src */,
-			);
-			path = Xiph.org;
-			sourceTree = "<group>";
-		};
-		17E5BB9525C819000061F232 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				17E5BB9625C819000061F232 /* framing.c */,
-				17E5BB9725C819000061F232 /* bitwise.c */,
-				17EE845E25CC5F09002F15B3 /* crctable.h */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		17EE842825CC493A002F15B3 /* ogg-swiftUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,23 +100,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		17EE848325CC6478002F15B3 /* include */ = {
+		17EE867425CD990C002F15B3 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				17EE84D825CC68F5002F15B3 /* ogg */,
-				17EE84B325CC66A8002F15B3 /* ogg */,
+				17EE867525CD990C002F15B3 /* ogg.h */,
+				17EE867625CD990C002F15B3 /* os_types.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		17EE84D825CC68F5002F15B3 /* ogg */ = {
+		17EE867B25CD9915002F15B3 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				17EE84DA25CC68FF002F15B3 /* config_types.h */,
-				17EE84D925CC68FF002F15B3 /* ogg.h */,
-				17EE84DB25CC68FF002F15B3 /* os_types.h */,
+				17EE867C25CD9915002F15B3 /* framing.c */,
+				17EE867D25CD9915002F15B3 /* crctable.h */,
+				17EE867E25CD9915002F15B3 /* bitwise.c */,
 			);
-			name = ogg;
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,11 +126,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17EE84DC25CC68FF002F15B3 /* ogg.h in Headers */,
+				17EE868025CD9915002F15B3 /* crctable.h in Headers */,
+				17EE867725CD990C002F15B3 /* ogg.h in Headers */,
+				17EE867825CD990C002F15B3 /* os_types.h in Headers */,
 				17E5BBAE25C819910061F232 /* ogg_swift.h in Headers */,
-				17EE84DE25CC68FF002F15B3 /* os_types.h in Headers */,
-				17EE84DD25CC68FF002F15B3 /* config_types.h in Headers */,
-				17EE845F25CC5F09002F15B3 /* crctable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +212,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17EE84B425CC66A8002F15B3 /* ogg in Resources */,
 				17E5BC7425C84AA40061F232 /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,8 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E5BB9B25C819000061F232 /* framing.c in Sources */,
-				17E5BB9C25C819000061F232 /* bitwise.c in Sources */,
+				17EE867F25CD9915002F15B3 /* framing.c in Sources */,
+				17EE868125CD9915002F15B3 /* bitwise.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,7 +382,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Xiph.org/include";
+				HEADER_SEARCH_PATHS = "include/**";
 				INFOPLIST_FILE = "ogg-swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -432,7 +408,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Xiph.org/include";
+				HEADER_SEARCH_PATHS = "include/**";
 				INFOPLIST_FILE = "ogg-swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

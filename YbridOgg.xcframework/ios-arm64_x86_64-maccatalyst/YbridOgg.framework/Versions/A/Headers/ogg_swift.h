@@ -31,6 +31,5 @@
     @import AppKit;
 #endif
 
-#include "ogg/ogg.h"
-#include "ogg/os_types.h"
+#include "ogg.h"
 

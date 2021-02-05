@@ -32,10 +32,8 @@
 
 liboggDownload="https://downloads.xiph.org/releases/ogg/libogg-1.3.4.zip"
 here=$(pwd)
+
 logfile="$here/prepare.log"
-
-xcprojPath="Xiph.org"
-
 rm -rf libogg* > $logfile
 
 wget $liboggDownload >> $logfile
@@ -44,10 +42,19 @@ unzip `basename $liboggDownload` >> $logfile
 liboggDir=`basename $liboggDownload | sed "s/\.zip$//"` 
 cd $liboggDir
 ./configure >> $logfile
- 
+
 cd $here
 echo "copy sources into ogg-swift.xcodeproj"
-cp -v $liboggDir/include/ogg/*.h $xcprojPath/include/ogg
-cp -v $liboggDir/src/*.{h,c} $xcprojPath/src
-
+# pattern to flatten all ogg includes 
+pattern='s|<ogg\/(.+)>|"\1"|g'
+for f in $liboggDir/include/ogg/*.h; do
+    file=`basename $f`
+    echo "copying $file with flattened ogg includes"
+    sed -r $pattern $f > include/$file 
+done
+for f in $liboggDir/src/*.{h,c}; do
+    file=`basename $f`
+    echo "copying $file with flattened ogg includes"
+    sed -r $pattern $f > src/$file 
+done
 echo "ogg-swift.xcodeproj is prepared, check $logfile"

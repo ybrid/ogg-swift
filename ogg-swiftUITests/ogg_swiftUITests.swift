@@ -24,7 +24,6 @@
 //
 
 import XCTest
-import YbridOgg
 
 class ogg_swiftUITests: XCTestCase {
 

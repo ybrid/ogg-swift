@@ -8,21 +8,17 @@
 		<data>
 		vDDTFM2gnQTTjFOTA/RhMkvlec0=
 		</data>
-		<key>Headers/config_types.h</key>
-		<data>
-		XiH6N3BFq9lgKbnUUXwH4P9IqC8=
-		</data>
 		<key>Headers/ogg.h</key>
 		<data>
-		s2G1RwkNyJi0TYUz1kBiffxeCIU=
+		AG1fq3KlQ81ZJbt38BCb+d4oVjM=
 		</data>
 		<key>Headers/ogg_swift.h</key>
 		<data>
-		pgdJvHuvTk27pOHbz/lvOEM2Pxg=
+		cN4ejKLzqqcFCCLKBeFoARgtoJo=
 		</data>
 		<key>Headers/os_types.h</key>
 		<data>
-		76jNNZVUMQEI4egRkazu535golY=
+		9EGEffFfmJRa4igZ5TUyLzeb5Ww=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -31,18 +27,6 @@
 		<key>Modules/module.modulemap</key>
 		<data>
 		VGhawAC0Il5zbNhChT/l2/vExHU=
-		</data>
-		<key>ogg/config_types.h</key>
-		<data>
-		XiH6N3BFq9lgKbnUUXwH4P9IqC8=
-		</data>
-		<key>ogg/ogg.h</key>
-		<data>
-		s2G1RwkNyJi0TYUz1kBiffxeCIU=
-		</data>
-		<key>ogg/os_types.h</key>
-		<data>
-		76jNNZVUMQEI4egRkazu535golY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -58,48 +42,37 @@
 			t0u0RpqoP79RlJMKf09NpLMjl1jTuTTKwusQyqyIt5I=
 			</data>
 		</dict>
-		<key>Headers/config_types.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XiH6N3BFq9lgKbnUUXwH4P9IqC8=
-			</data>
-			<key>hash2</key>
-			<data>
-			vUJMVnDiG/N/zQOdTjmp+PGapa9+5yCBCgcJLaZVfmA=
-			</data>
-		</dict>
 		<key>Headers/ogg.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s2G1RwkNyJi0TYUz1kBiffxeCIU=
+			AG1fq3KlQ81ZJbt38BCb+d4oVjM=
 			</data>
 			<key>hash2</key>
 			<data>
-			qthhCcH9s3dzhnWmPgsZhZ4GraJa5cWcKQynJj0dxMo=
+			okK4U7bqfTtJ8BxyRg3wzEtLrlNpFrKavDR9ysR9CWM=
 			</data>
 		</dict>
 		<key>Headers/ogg_swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pgdJvHuvTk27pOHbz/lvOEM2Pxg=
+			cN4ejKLzqqcFCCLKBeFoARgtoJo=
 			</data>
 			<key>hash2</key>
 			<data>
-			1iFr7pefTTPXLmdnKE8xqfHe24hjq2UoGOTXaegyRmQ=
+			REbbKnFjcW1nCjQZpyMgJRo9wnBKuRCOGyYu6T/Ng0g=
 			</data>
 		</dict>
 		<key>Headers/os_types.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			76jNNZVUMQEI4egRkazu535golY=
+			9EGEffFfmJRa4igZ5TUyLzeb5Ww=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZCazfRB2lGNYlaS6LksANdVBNYZWiUppV3K3ble/DAo=
+			IhiTRLuLcmtqVJ+PSJkSwEcswfPaPJraHcQ3rTWlH/U=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -111,39 +84,6 @@
 			<key>hash2</key>
 			<data>
 			5XzuITy/Hpe53PuAhpo0CM+njmvD2ojdYaB6R5WeGFY=
-			</data>
-		</dict>
-		<key>ogg/config_types.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			XiH6N3BFq9lgKbnUUXwH4P9IqC8=
-			</data>
-			<key>hash2</key>
-			<data>
-			vUJMVnDiG/N/zQOdTjmp+PGapa9+5yCBCgcJLaZVfmA=
-			</data>
-		</dict>
-		<key>ogg/ogg.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			s2G1RwkNyJi0TYUz1kBiffxeCIU=
-			</data>
-			<key>hash2</key>
-			<data>
-			qthhCcH9s3dzhnWmPgsZhZ4GraJa5cWcKQynJj0dxMo=
-			</data>
-		</dict>
-		<key>ogg/os_types.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			76jNNZVUMQEI4egRkazu535golY=
-			</data>
-			<key>hash2</key>
-			<data>
-			ZCazfRB2lGNYlaS6LksANdVBNYZWiUppV3K3ble/DAo=
 			</data>
 		</dict>
 	</dict>
