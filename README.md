@@ -41,7 +41,7 @@ in the root of the project. It updates YbridOgg.xcframework.
    - LICENSE
 5. execute ```./pod_push.sh``` and stay ready to input your password several times
 
-The new version should be visible in [Private-Cocoapods](https://github.com/ybrid/Private-Cocoapods) after 24 hours.
+The new version should be visible in [Private-Cocoapods](https://github.com/ybrid/Private-Cocoapods) after 24 hours. 
 
 # 3rd party licenses
 ## ogg

@@ -377,6 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PF7PNM95XY;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -390,10 +391,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.7.0;
+				MARKETING_VERSION = 0.7.1;
 				MODULEMAP_FILE = "ogg-swift/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.ogg-swift";
 				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
@@ -403,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = PF7PNM95XY;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -416,10 +419,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.7.0;
+				MARKETING_VERSION = 0.7.1;
 				MODULEMAP_FILE = "ogg-swift/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.ogg-swift";
 				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
