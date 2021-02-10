@@ -26,7 +26,7 @@
 import XCTest
 import YbridOgg
 
-class ogg_swiftUITests: XCTestCase {
+class oggPlatformTests: XCTestCase {
 
     func testBundleInfo() throws {
         let oggBundleIdentifier = "io.ybrid.ogg-swift"

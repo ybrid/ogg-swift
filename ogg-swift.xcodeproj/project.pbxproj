@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		17E5BBAE25C819910061F232 /* ogg_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E5BBAC25C819910061F232 /* ogg_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17E5BC7425C84AA40061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BC7325C84AA40061F232 /* Config.xcconfig */; };
-		17EE842A25CC493A002F15B3 /* ogg_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE842925CC493A002F15B3 /* ogg_swiftUITests.swift */; };
+		17EE842A25CC493A002F15B3 /* oggPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE842925CC493A002F15B3 /* oggPlatformTests.swift */; };
 		17EE843425CC4A63002F15B3 /* YbridOgg.framework in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BB6A25C817C20061F232 /* YbridOgg.framework */; };
 		17EE867725CD990C002F15B3 /* ogg.h in Headers */ = {isa = PBXBuildFile; fileRef = 17EE867525CD990C002F15B3 /* ogg.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17EE867825CD990C002F15B3 /* os_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 17EE867625CD990C002F15B3 /* os_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,7 +25,7 @@
 		17E5BBCD25C821EA0061F232 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		17E5BC7325C84AA40061F232 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		17EE842725CC493A002F15B3 /* ogg-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ogg-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		17EE842925CC493A002F15B3 /* ogg_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ogg_swiftUITests.swift; sourceTree = "<group>"; };
+		17EE842925CC493A002F15B3 /* oggPlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oggPlatformTests.swift; sourceTree = "<group>"; };
 		17EE842B25CC493A002F15B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17EE867525CD990C002F15B3 /* ogg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ogg.h; sourceTree = "<group>"; };
 		17EE867625CD990C002F15B3 /* os_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = os_types.h; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		17EE842825CC493A002F15B3 /* ogg-swiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				17EE842925CC493A002F15B3 /* ogg_swiftUITests.swift */,
+				17EE842925CC493A002F15B3 /* oggPlatformTests.swift */,
 				17EE842B25CC493A002F15B3 /* Info.plist */,
 			);
 			path = "ogg-swiftUITests";
@@ -241,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17EE842A25CC493A002F15B3 /* ogg_swiftUITests.swift in Sources */,
+				17EE842A25CC493A002F15B3 /* oggPlatformTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +382,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = PF7PNM95XY;
+				DEVELOPMENT_TEAM = J327NUG776;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -410,7 +410,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 4;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = PF7PNM95XY;
+				DEVELOPMENT_TEAM = J327NUG776;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -436,7 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PF7PNM95XY;
+				DEVELOPMENT_TEAM = J327NUG776;
 				INFOPLIST_FILE = "ogg-swiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,7 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PF7PNM95XY;
+				DEVELOPMENT_TEAM = J327NUG776;
 				INFOPLIST_FILE = "ogg-swiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
