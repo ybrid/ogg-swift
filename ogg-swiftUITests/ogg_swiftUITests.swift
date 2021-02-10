@@ -24,6 +24,7 @@
 //
 
 import XCTest
+import YbridOgg
 
 class ogg_swiftUITests: XCTestCase {
 
@@ -47,6 +48,19 @@ class ogg_swiftUITests: XCTestCase {
         let copyright = info["NSHumanReadableCopyright"] as! String
         XCTAssertTrue(copyright.contains("nacamar"))
         
-        print("-- version of \(name) is \(version)")
+        let build = info["CFBundleVersion"] as! String
+        print("-- version of \(name) is \(version) (build \(build))")
     }
+    
+    func testOggAvailable() {
+        var oggSyncState = ogg_sync_state()
+        print("-- ogg_sync_state() is '\(oggSyncState)\'")
+        XCTAssertNotNil(oggSyncState)
+        XCTAssertEqual(0, oggSyncState.returned)
+        ogg_sync_init(&oggSyncState)
+        ogg_sync_clear(&oggSyncState)
+        print("-- ogg_sync_state() is '\(oggSyncState)\'")
+        XCTAssertEqual(0, oggSyncState.returned)
+    }
+    
 }
