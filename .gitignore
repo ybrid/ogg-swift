@@ -21,10 +21,10 @@ DerivedData
 Pods
 
 # nacamar's prepare.sh operates in libogg* and build.sh creates xcframework
-**/build-*.log
 *.log
 libogg-*/
 include/*.h
+include/COPYING
 src/*.h 
 src/*.c
 *.xcframework

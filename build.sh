@@ -46,23 +46,27 @@ mkdir -p "$builtPath"
 scheme=ogg-swift
 
 platform=iphoneos
-echo "building for $platform..."
-xcodebuild archive -scheme $scheme -destination="iOS" -sdk $platform -derivedDataPath $dd -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$config-$platform.log"
+echo "building for $platform ..."
+xcodebuild archive -scheme $scheme -sdk $platform -destination="iOS" -derivedDataPath $dd \
+    -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$platform.log"
 cp -R "$archivesPath/$platform.xcarchive/$generatedPath" "$builtPath/Archive-$platform"
 
 platform=iphonesimulator
-echo "building for $platform...."
-xcodebuild archive -scheme $scheme -destination="iOS Simulator" -sdk $platform -derivedDataPath $dd -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$config-$platform.log"
+echo "building for $platform ..."
+xcodebuild archive -scheme $scheme -sdk $platform -destination="iOS Simulator" -derivedDataPath $dd \
+    -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$platform.log"
 cp -R "$archivesPath/$platform.xcarchive/$generatedPath" "$builtPath/Archive-$platform"
 
 platform=maccatalyst
-echo "building for $platform...."
-xcodebuild archive -scheme $scheme -destination 'generic/platform=macOS,variant=Mac Catalyst,name=Any Mac' -derivedDataPath $dd -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$config-$platform.log"
+echo "building for $platform ..."
+xcodebuild archive -scheme $scheme -sdk macosx -destination 'generic/platform=macOS,variant=Mac Catalyst,name=Any Mac' -derivedDataPath $dd \
+    -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$platform.log"
 cp -R "$archivesPath/$platform.xcarchive/$generatedPath" "$builtPath/Archive-$platform"
 
 platform=macosx
-echo "building for $platform..."
-xcodebuild archive -scheme $scheme -destination='My Mac' -sdk $platform -derivedDataPath $dd -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$config-$platform.log"
+echo "building for $platform ..."
+xcodebuild archive -scheme $scheme -sdk $platform -destination='My Mac' -derivedDataPath $dd \
+    -archivePath "$archivesPath/$platform.xcarchive" $opts > "build-$platform.log"
 cp -R "$archivesPath/$platform.xcarchive/$generatedPath" "$builtPath/Archive-$platform"
 
 

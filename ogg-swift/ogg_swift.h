@@ -1,6 +1,6 @@
 //
 //  ogg_swift.h
-//  ogg-cocoapod
+//  ogg-swift
 //
 // Copyright (c) 2021 nacamar GmbH - Ybrid®, a Hybrid Dynamic Live Audio Technology
 //
@@ -32,4 +32,3 @@
 #endif
 
 #include "ogg.h"
-

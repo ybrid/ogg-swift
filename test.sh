@@ -38,21 +38,31 @@ testing="-only-testing $target/oggPlatformTests"
 logbase="test-"
 rm -f "$logbase*.log"
 
-platform=iphonesimulator
-device="iPhone 11 Pro"
-logfile=$logbase$device.log
-echo "testing with $platform on $device"
-xcodebuild -scheme $scheme -destination "name=$device" -sdk $platform \
- test $testing 2>&1 > "$logfile"
-result=`cat "$logfile" | grep -e "\*\* TEST"`
-echo "$result, see $logfile"
-echo "---------------------------------"
+# platform=iphonesimulator
+# device="iPhone 11 Pro"
+# logfile=$logbase$device.log
+# echo "testing with $platform on $device"
+# xcodebuild -scheme $scheme -destination "name=$device" -sdk $platform \
+#  test $testing 2>&1 > "$logfile"
+# result=`cat "$logfile" | grep -e "\*\* TEST"`
+# echo "$result, see $logfile"
+# echo "---------------------------------"
 
-device="iPhone 6s"
-logfile=$logbase$device.log
+# device="iPhone 6s"
+# logfile=$logbase$device.log
+# echo "testing with $platform on $device"
+# xcodebuild -scheme $scheme -destination "platform=iOS Simulator,OS=11.4,name=$device" -sdk $platform \
+#  test $testing 2>&1 > "$logfile"
+# result=`cat "$logfile" | grep -e "\*\* TEST"`
+# echo "$result, see $logfile"
+# echo "---------------------------------"
+
+platform=macosx
+device='Any Mac'
 echo "testing with $platform on $device"
-xcodebuild -scheme $scheme -destination "platform=iOS Simulator,OS=11.4,name=$device" -sdk $platform \
- test $testing 2>&1 > "$logfile"
+logfile=$logbase$device.log
+xcodebuild -scheme $scheme -destination='generic/platform=macOS,variant=Mac Catalyst,name=$device' \
+  -sdk $platform test $testing 2>&1 > "$logfile"
 result=`cat "$logfile" | grep -e "\*\* TEST"`
 echo "$result, see $logfile"
 echo "---------------------------------"
@@ -67,16 +77,17 @@ result=`cat "$logfile" | grep -e "\*\* TEST"`
 echo "$result, see $logfile"
 echo "---------------------------------"
 
-## You may run tests on your own connected device
-platform=iphoneos
-#device="Nacamars iPad Air" # iOS 12
-device="Nacamar's iPad Mini" # iOS 9
-echo "testing with $platform on $device"
-logfile=$logbase$device.log
-xcodebuild -scheme $scheme -destination "platform=iOS,name=$device" -sdk $platform \
-  test $testing 2>&1 > "$logfile"
-result=`cat "$logfile" | grep -e "\*\* TEST"`
-echo "$result, see $logfile"
-echo "---------------------------------"
+
+# ## You may run tests on your own connected device
+# platform=iphoneos
+# #device="Nacamars iPad Air" # iOS 12
+# device="Nacamar's iPad Mini" # iOS 9
+# echo "testing with $platform on $device"
+# logfile=$logbase$device.log
+# xcodebuild -scheme $scheme -destination "platform=iOS,name=$device" -sdk $platform \
+#   test $testing 2>&1 > "$logfile"
+# result=`cat "$logfile" | grep -e "\*\* TEST"`
+# echo "$result, see $logfile"
+# echo "---------------------------------"
 
 echo "done."

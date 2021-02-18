@@ -45,15 +45,19 @@ cd $liboggDir
 cd $here
 echo "copy sources into ogg-swift.xcodeproj"
 # pattern to flatten all ogg includes 
-pattern='s|<ogg\/(.+)>|"\1"|g'
+modifyIncludesPattern='s|<ogg\/(.+)>|"\1"|g'
+modifiedMarkerPattern='1s|^|// this file has been modified by nacamar GmbH\n|'
 for f in $liboggDir/include/ogg/*.h; do
     file=`basename $f`
     echo "copying $file with flattened ogg includes"
-    sed -r $pattern $f > include/$file 
+    sed -r $modifyIncludesPattern $f > include/$file
+    sed -i '' "$modifiedMarkerPattern" include/$file 
 done
 for f in $liboggDir/src/*.{h,c}; do
     file=`basename $f`
     echo "copying $file with flattened ogg includes"
-    sed -r $pattern $f > src/$file 
+    sed -r $modifyIncludesPattern $f > src/$file
+    sed -i '' "$modifiedMarkerPattern" src/$file 
 done
+cp $liboggDir/COPYING include
 echo "ogg-swift.xcodeproj is ready, check $logfile"

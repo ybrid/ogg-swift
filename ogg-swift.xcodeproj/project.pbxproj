@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17CBC68025DEDE4300B2F7E7 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 17CBC67F25DEDE4300B2F7E7 /* COPYING */; };
+		17CBC68325DEDE5B00B2F7E7 /* COPYING in Headers */ = {isa = PBXBuildFile; fileRef = 17CBC67F25DEDE4300B2F7E7 /* COPYING */; settings = {ATTRIBUTES = (Public, ); }; };
 		17E5BBAE25C819910061F232 /* ogg_swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 17E5BBAC25C819910061F232 /* ogg_swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17E5BC7425C84AA40061F232 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BC7325C84AA40061F232 /* Config.xcconfig */; };
 		17EE842A25CC493A002F15B3 /* oggPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EE842925CC493A002F15B3 /* oggPlatformTests.swift */; };
@@ -29,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17CBC67F25DEDE4300B2F7E7 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 		17E5BB6A25C817C20061F232 /* YbridOgg.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YbridOgg.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E5BBAB25C819910061F232 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17E5BBAC25C819910061F232 /* ogg_swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ogg_swift.h; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 		17EE867425CD990C002F15B3 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				17CBC67F25DEDE4300B2F7E7 /* COPYING */,
 				17EE867525CD990C002F15B3 /* ogg.h */,
 				17EE867625CD990C002F15B3 /* os_types.h */,
 			);
@@ -139,6 +143,7 @@
 				17EE868025CD9915002F15B3 /* crctable.h in Headers */,
 				17EE867725CD990C002F15B3 /* ogg.h in Headers */,
 				17EE867825CD990C002F15B3 /* os_types.h in Headers */,
+				17CBC68325DEDE5B00B2F7E7 /* COPYING in Headers */,
 				17E5BBAE25C819910061F232 /* ogg_swift.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17CBC68025DEDE4300B2F7E7 /* COPYING in Resources */,
 				17E5BC7425C84AA40061F232 /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.ogg-swift";
 				PRODUCT_NAME = YbridOgg;
 				SDKROOT = "";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -384,6 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.ybrid.ogg-swift";
 				PRODUCT_NAME = YbridOgg;
 				SDKROOT = "";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
