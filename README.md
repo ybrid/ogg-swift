@@ -23,27 +23,32 @@ Git clone/pull this project onto your system.
 
 Choose a new version number, let's say ```0.7.0```
 
-## Prepare xcode project
-The original C and header files to be compiled will be placed into ogg-swift.xcodeproj
+## Step 1: preparing xcode project
+The original C and header files are taken from [xiph.org/releases/ogg](https://downloads.xiph.org/releases/ogg) and placed into ogg-swift.xcodeproj
 1. by executing  ```./prepare.sh``` in a terminal in the root of the project. 
 2. Open the ogg-swift.xcodeproject with XCode. In the properties editor, on target ```ogg-swift``` select ```General``` and change ```Version``` to the new number. Close the project.           
 
-## Part 1: generate an XCFramework
+## Step 2: generate the XCFramework
 1. In a terminal execute  ```./build.sh```
-in the root of the project. It updates YbridOgg.xcframework.
+in the root of the project. This generates the YbridOgg.xcframework.
 
-## Part 2. release a new Version
+## Step 3: release the new Version
 1. In the root directory execute ```./pod_check.sh```. Repair errors if neccassary.
 2. Alter the version number in YbridOgg.podspec's source line
 3. Commit and push everything
-4. On github create a new release with the version number and upload the binary
-   - YbridOgg.xcframework.zip and
-   - LICENSE
-5. execute ```./pod_push.sh``` and stay ready to input your password several times
+4. In the [github repository](https://github.com/ybrid/ogg-swift) create a new release with the version number and upload the binary
+   - name it
+   - mentions the changes
+   - upload the generated YbridOgg.xcframework.zip by dragging it into the "attach binaries section"
 
-The new version should be visible in [Private-Cocoapods](https://github.com/ybrid/Private-Cocoapods) after 24 hours. 
+## Step 4: publish to CocoaPods
+1. register a new session with
+```shell
+pod trunk register florian.nowotny@nacamar.de 'Florian Nowotny' --description='macbook pro'
+```
+2. After confirming the email from CocoaPods and execute ```./pod_push.sh```
+
+The new version should be visible in [CocoaPods Specs](https://github.com/CocoaPods/Specs/tree/master/Specs/2/7/1/YbridOgg) and can be found on [cocoapods.org](https://cocoapods.org/) after 24 hours. 
 
 # Licenses
-This project is under MIT license. It makes use of the sources for ogg from [xiph.org](https://xiph.org/downloads/). ogg is licensed under the [New BSD License](https://wiki.xiph.org/XiphWiki:Copyrights).
-
-See the [LICENSE](https://github.com/ybrid/ogg-swift/blob/master/LICENSE) file.
+This project is under MIT license. It makes use of the sources for ogg from [xiph.org/downloads](https://xiph.org/downloads/). Ogg is licensed under the [New BSD License](https://wiki.xiph.org/XiphWiki:Copyrights). See the [LICENSE](https://github.com/ybrid/ogg-swift/blob/master/LICENSE) file.

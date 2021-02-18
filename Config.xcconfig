@@ -26,13 +26,16 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
+// Architectures
 ARCHS = arm64 armv7 x86_64 x86_64h i386
 EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
 EXCLUDED_ARCHS[sdk=macosx*] = i386
-
 SUPPORTED_PLATFORMS = iphoneos iphonesimulator macosx
 
+// Deployment
+TARGETED_DEVICE_FAMILY = 1,2,6
 IPHONEOS_DEPLOYMENT_TARGET = 9.0
 MACOSX_DEPLOYMENT_TARGET = 10.10
 
+// else
 SWIFT_VERSION = 4.0
