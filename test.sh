@@ -32,11 +32,10 @@ scheme=ogg-swiftUITests
 target=ogg-swiftUITests
 testing="-only-testing $target/oggPlatformTests"
 
-# clean up sould not be necessary
-#rm -rfd ./DerivedData
-
 logbase="test-"
 rm -f "$logbase*.log"
+
+grepToStdoutPattern="^\s*Executed\s\d*\stests|^\*\* TEST"
 
 platform=iphonesimulator
 device="iPhone 11 Pro"
@@ -44,7 +43,7 @@ logfile=$logbase$device.log
 echo "testing with $platform on $device"
 xcodebuild -scheme $scheme -destination "name=$device" -sdk $platform \
  test $testing 2>&1 > "$logfile"
-result=`cat "$logfile" | grep -e "\*\* TEST"`
+result=`cat "$logfile" | grep -E "$grepToStdoutPattern"`
 echo "$result, see $logfile"
 echo "---------------------------------"
 
@@ -53,7 +52,7 @@ logfile=$logbase$device.log
 echo "testing with $platform on $device"
 xcodebuild -scheme $scheme -destination "platform=iOS Simulator,OS=11.4,name=$device" -sdk $platform \
  test $testing 2>&1 > "$logfile"
-result=`cat "$logfile" | grep -e "\*\* TEST"`
+result=`cat "$logfile" | grep -E "$grepToStdoutPattern"`
 echo "$result, see $logfile"
 echo "---------------------------------"
 
@@ -63,7 +62,7 @@ echo "testing with $platform on $device"
 logfile=$logbase$device.log
 xcodebuild -scheme $scheme -destination='generic/platform=macOS,variant=Mac Catalyst,name=$device' \
   -sdk $platform test $testing 2>&1 > "$logfile"
-result=`cat "$logfile" | grep -e "\*\* TEST"`
+result=`cat "$logfile" | grep -E "$grepToStdoutPattern"`
 echo "$result, see $logfile"
 echo "---------------------------------"
 
@@ -73,7 +72,7 @@ echo "testing with $platform on $device"
 logfile=$logbase$device.log
 xcodebuild -scheme $scheme -destination='$device' -sdk $platform \
   test $testing 2>&1 > "$logfile"
-result=`cat "$logfile" | grep -e "\*\* TEST"`
+result=`cat "$logfile" | grep -E "$grepToStdoutPattern"`
 echo "$result, see $logfile"
 echo "---------------------------------"
 
@@ -81,12 +80,13 @@ echo "---------------------------------"
 # ## You may run tests on your own connected device
 # platform=iphoneos
 # #device="Nacamars iPad Air" # iOS 12
-# device="Nacamar's iPad Mini" # iOS 9
+# #device="Nacamar's iPad Mini" # iOS 9
+# device="iPhone von Florian" # iOS 14
 # echo "testing with $platform on $device"
 # logfile=$logbase$device.log
 # xcodebuild -scheme $scheme -destination "platform=iOS,name=$device" -sdk $platform \
 #   test $testing 2>&1 > "$logfile"
-# result=`cat "$logfile" | grep -e "\*\* TEST"`
+# result=`cat "$logfile" | grep -E "$grepToStdoutPattern"`
 # echo "$result, see $logfile"
 # echo "---------------------------------"
 
