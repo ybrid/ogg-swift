@@ -5,7 +5,7 @@
 #
 Pod::Spec.new do |s|
     s.name          = 'YbridOgg'
-    s.version       = '0.7.3'
+    s.version       = '0.7.4'
     s.summary       = 'Ogg xcframework for iOS and macOS.'
     s.description   = <<-DESC
     XCFramework to use Ogg transport layer API within Swift source.
