@@ -87,5 +87,5 @@ $cmd
 
 echo "zip $xcFramework including LICENSE file..."
 cp LICENSE $xcFramework
-zip -q -r $xcFramework.zip $xcFramework
+zip -q -r -y $xcFramework.zip $xcFramework
 echo "done."
