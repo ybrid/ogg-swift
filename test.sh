@@ -37,7 +37,9 @@ rm -f "$logbase*.log"
 
 grepToStdoutPattern="^\s*Executed\s\d*\stests|^\*\* TEST"
 
+# simulators
 platform=iphonesimulator
+
 device="iPhone 11 Pro"
 logfile=$logbase$device.log
 echo "testing with $platform on $device"
@@ -56,7 +58,9 @@ result=`cat "$logfile" | grep -E "$grepToStdoutPattern"`
 echo "$result, see $logfile"
 echo "---------------------------------"
 
+# macs
 platform=macosx
+
 device='Any Mac'
 echo "testing with $platform on $device"
 logfile=$logbase$device.log
@@ -66,7 +70,6 @@ result=`cat "$logfile" | grep -E "$grepToStdoutPattern"`
 echo "$result, see $logfile"
 echo "---------------------------------"
 
-platform=macosx
 device="My Mac"
 echo "testing with $platform on $device"
 logfile=$logbase$device.log
@@ -76,9 +79,9 @@ result=`cat "$logfile" | grep -E "$grepToStdoutPattern"`
 echo "$result, see $logfile"
 echo "---------------------------------"
 
-
+# real ios devices
 # ## You may run tests on your own connected device
-# platform=iphoneos
+platform=iphoneos
 # #device="Nacamars iPad Air" # iOS 12
 # #device="Nacamar's iPad Mini" # iOS 9
 # device="iPhone von Florian" # iOS 14
